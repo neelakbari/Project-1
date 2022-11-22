@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+.header
+{
+display: flex;
+flex-wrap: wrap;
+gap: 50px;}
+
+.logo{
+    /* width: 20%; */
+    background-color: aqua;
+	flex: 1 1 300px;
+}
+.right{
+    /* width: 80%; */
+    background-color: greenyellow;
+	flex: 1 1 300px;
+}
+.nav
+{
+	background: tan;
+	text-align: center;
+	position: relative;
+
+}
+
+.nav .menu
+{
+	display: inline-block;
+    padding: 15px;
+}	
+
+.nav li .main-link 
+{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.nav .dropdown
+{
+	display: none;
+	position: absolute;
+	top:100%;
+	list-style: none;
+}
+.nav .dropdown li{
+    display: block;
+	margin-right: 20px;
+    padding: 15px 10px;
+    background-color: blueviolet;
+
+}
+.nav .dropdown li a{
+    text-decoration: none;
+    color: white;
+	font-size: 24px;
+
+}
+.nav .menu:hover .dropdown
+{
+	display: block;
+}
+
+.slider{  
+    height: 700px;
+	background: url(../images/slider_sterrato.webp);
+	background-size: 100% 100%;
+}
+
+
+.content
+{
+	height: auto;
+	background: aliceblue;
+	padding: 45px;
+}
+
+.content .products
+{
+	height: auto;
+	width:90%;
+	background: lightcoral;
+	margin: auto;
+	padding: 25px;
+	border: 2px solid green;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.content .products .items
+{
+	height: 300px;
+	flex:1 1 200px;
+	margin: 20px;
+	border: 1px solid white;
+		
+}
+
+
+.footer
+{
+	height: 150px;
+	background: yellow;
+}
